@@ -32,6 +32,17 @@ export const getStaticProps = async (context) => {
 
 }
 
+// Para serverSideRender
+// export const getServerSideProps = async (context) => {
+//     const id = context.params.id;
+//     const res = await fetch('https://jsonplaceholder.typicode.com/users/' + id);
+//     const data = await res.json();
+
+//     return {
+//         props:{ person: data }
+//     }
+
+// }
 
 const Details = ( {person} ) => {
     return ( 
